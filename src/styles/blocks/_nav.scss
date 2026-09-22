@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 .nav {
   &__list {
     display: flex;
@@ -19,14 +21,14 @@
 
     font-size: 12px;
     font-weight: 500;
-    color: #060b35;
+    color: $color-main;
     text-decoration: none;
     text-transform: uppercase;
 
     transition: color 0.3s;
 
     &.is-active {
-      color: #00acdc;
+      color: $color-accent;
     }
 
     &.is-active::after {
@@ -40,11 +42,11 @@
       height: 4px;
       border-radius: 2px;
 
-      background-color: #00acdc;
+      background-color: $color-accent;
     }
   }
 
   &__link:hover {
-    color: #00acdc;
+    color: $color-accent;
   }
 }
